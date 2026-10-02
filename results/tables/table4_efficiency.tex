@@ -1,0 +1,15 @@
+\begin{table}
+\caption{Model size and inference latency per document.}
+\label{tab:table4_efficiency}
+\begin{tabular}{lrrl}
+\toprule
+ & params & ms_per_doc & device \\
+\midrule
+D1 TF-IDF(char)+LR & 200000.000 & 1.426 & cuda \\
+D2 Stylometry+GBM & NaN & 1.262 & cuda \\
+D3 Perplexity(Pythia-160M)+LR & 162322944.000 & 9.451 & cuda \\
+D4 DistilRoBERTa (fine-tuned) & 82119938.000 & 2.341 & cuda \\
+Proposed: Norm + Fusion & 244642882.000 & 14.480 & cuda \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,29 @@
+{
+  "seed": 42,
+  "raid_url": "https://dataset.raid-bench.xyz/train_none.csv",
+  "raid_path": "/content/raid_train_none.csv",
+  "per_model_n": 1500,
+  "human_n": 15000,
+  "min_chars": 200,
+  "max_chars": 2000,
+  "run_tag": "v2_flat",
+  "flatten_layout": true,
+  "split": [
+    0.7,
+    0.1,
+    0.2
+  ],
+  "tf_model": "distilroberta-base",
+  "ppl_model": "EleutherAI/pythia-160m",
+  "max_len": 256,
+  "epochs": 2,
+  "batch": 32,
+  "lr": 3e-05,
+  "ppl_batch": 16,
+  "attack_n": 2000,
+  "run_logo": true,
+  "logo_epochs": 1,
+  "run_paraphrase": false,
+  "paraphrase_n": 300,
+  "out_dir": "/content/results"
+}

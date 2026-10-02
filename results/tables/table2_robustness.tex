@@ -1,0 +1,26 @@
+\begin{table}
+\caption{TPR at 5% FPR under attacks (raw vs. normalized input).}
+\label{tab:table2_robustness}
+\begin{tabular}{llrrrrrrrrr}
+\toprule
+ & attack & article_deletion & case_flip & combined & homoglyph & none & synonym & typos & whitespace & zero_width \\
+detector & defense &  &  &  &  &  &  &  &  &  \\
+\midrule
+\multirow[t]{2}{*}{D1 TF-IDF(char)+LR} & normalized & 0.786 & 0.765 & 0.753 & 0.765 & 0.765 & 0.716 & 0.742 & 0.765 & 0.765 \\
+ & raw & 0.785 & 0.764 & 0.666 & 0.734 & NaN & 0.715 & 0.741 & 0.764 & 0.711 \\
+\cline{1-11}
+\multirow[t]{2}{*}{D2 Stylometry+GBM} & normalized & 0.694 & 0.654 & 0.754 & 0.758 & 0.758 & 0.775 & 0.749 & 0.758 & 0.758 \\
+ & raw & 0.695 & 0.654 & 0.393 & 0.646 & NaN & 0.775 & 0.749 & 0.790 & 0.297 \\
+\cline{1-11}
+\multirow[t]{2}{*}{D3 Perplexity(Pythia-160M)+LR} & normalized & 0.308 & 0.088 & 0.444 & 0.683 & 0.683 & 0.384 & 0.262 & 0.683 & 0.683 \\
+ & raw & 0.308 & 0.090 & 0.989 & 0.823 & NaN & 0.384 & 0.261 & 0.600 & 0.160 \\
+\cline{1-11}
+\multirow[t]{2}{*}{D4 DistilRoBERTa (fine-tuned)} & normalized & 0.748 & 0.140 & 0.775 & 0.928 & 0.928 & 0.824 & 0.642 & 0.928 & 0.928 \\
+ & raw & 0.748 & 0.139 & 0.013 & 0.126 & NaN & 0.824 & 0.642 & 0.594 & 0.025 \\
+\cline{1-11}
+\multirow[t]{2}{*}{Proposed: Norm + Fusion} & normalized & 0.870 & 0.390 & 0.896 & 0.959 & 0.959 & 0.903 & 0.833 & 0.959 & 0.959 \\
+ & raw & 0.870 & 0.390 & 0.685 & 0.672 & NaN & 0.903 & 0.833 & 0.890 & 0.132 \\
+\cline{1-11}
+\bottomrule
+\end{tabular}
+\end{table}

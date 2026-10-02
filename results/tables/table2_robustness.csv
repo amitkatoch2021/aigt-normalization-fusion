@@ -1,0 +1,11 @@
+detector,defense,article_deletion,case_flip,combined,homoglyph,none,synonym,typos,whitespace,zero_width
+D1 TF-IDF(char)+LR,normalized,0.786,0.765,0.753,0.765,0.765,0.7155,0.7415,0.765,0.765
+D1 TF-IDF(char)+LR,raw,0.7855,0.7645,0.666,0.734,,0.7145,0.7405,0.7645,0.711
+D2 Stylometry+GBM,normalized,0.694,0.6545,0.754,0.758,0.758,0.7755,0.749,0.758,0.758
+D2 Stylometry+GBM,raw,0.6945,0.654,0.3925,0.646,,0.7755,0.7485,0.7905,0.297
+D3 Perplexity(Pythia-160M)+LR,normalized,0.308,0.0885,0.4435,0.6835,0.6835,0.384,0.2615,0.6835,0.6835
+D3 Perplexity(Pythia-160M)+LR,raw,0.308,0.09,0.9885,0.8225,,0.3835,0.2605,0.6,0.1595
+D4 DistilRoBERTa (fine-tuned),normalized,0.748,0.1395,0.7755,0.928,0.928,0.824,0.642,0.928,0.928
+D4 DistilRoBERTa (fine-tuned),raw,0.748,0.1385,0.013,0.1255,,0.8235,0.642,0.5935,0.0255
+Proposed: Norm + Fusion,normalized,0.87,0.39,0.8965,0.9585,0.9585,0.9035,0.8325,0.9585,0.9585
+Proposed: Norm + Fusion,raw,0.87,0.39,0.6855,0.672,,0.903,0.8325,0.8905,0.132

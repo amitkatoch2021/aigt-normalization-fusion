@@ -1,0 +1,86 @@
+attack,defense,detector,tpr_at_5fpr,auroc
+none,normalized,D1 TF-IDF(char)+LR,0.765,0.9435509708737865
+none,normalized,D2 Stylometry+GBM,0.758,0.9422879014189695
+none,normalized,D3 Perplexity(Pythia-160M)+LR,0.6835,0.8996740104555639
+none,normalized,D4 DistilRoBERTa (fine-tuned),0.928,0.9853435399551904
+none,normalized,Proposed: Norm + Fusion,0.9585,0.9915616131441375
+homoglyph,raw,D1 TF-IDF(char)+LR,0.734,0.9321258401792382
+homoglyph,raw,D2 Stylometry+GBM,0.646,0.904697722180732
+homoglyph,raw,D3 Perplexity(Pythia-160M)+LR,0.8225,0.9020276325616132
+homoglyph,raw,D4 DistilRoBERTa (fine-tuned),0.1255,0.4418652912621359
+homoglyph,raw,Proposed: Norm + Fusion,0.672,0.9221185586258402
+homoglyph,normalized,D1 TF-IDF(char)+LR,0.765,0.9435509708737865
+homoglyph,normalized,D2 Stylometry+GBM,0.758,0.9422879014189695
+homoglyph,normalized,D3 Perplexity(Pythia-160M)+LR,0.6835,0.8996740104555639
+homoglyph,normalized,D4 DistilRoBERTa (fine-tuned),0.928,0.9853435399551904
+homoglyph,normalized,Proposed: Norm + Fusion,0.9585,0.9915616131441375
+zero_width,raw,D1 TF-IDF(char)+LR,0.711,0.9297522404779687
+zero_width,raw,D2 Stylometry+GBM,0.297,0.687026138909634
+zero_width,raw,D3 Perplexity(Pythia-160M)+LR,0.1595,0.7467714712471994
+zero_width,raw,D4 DistilRoBERTa (fine-tuned),0.0255,0.21295901792382374
+zero_width,raw,Proposed: Norm + Fusion,0.132,0.6634790888722928
+zero_width,normalized,D1 TF-IDF(char)+LR,0.765,0.9435509708737865
+zero_width,normalized,D2 Stylometry+GBM,0.758,0.9422879014189695
+zero_width,normalized,D3 Perplexity(Pythia-160M)+LR,0.6835,0.8996740104555639
+zero_width,normalized,D4 DistilRoBERTa (fine-tuned),0.928,0.9853435399551904
+zero_width,normalized,Proposed: Norm + Fusion,0.9585,0.9915616131441375
+whitespace,raw,D1 TF-IDF(char)+LR,0.7645,0.943114637789395
+whitespace,raw,D2 Stylometry+GBM,0.7905,0.9485005601194921
+whitespace,raw,D3 Perplexity(Pythia-160M)+LR,0.6,0.8749596713965646
+whitespace,raw,D4 DistilRoBERTa (fine-tuned),0.5935,0.9098684652725915
+whitespace,raw,Proposed: Norm + Fusion,0.8905,0.97393857356236
+whitespace,normalized,D1 TF-IDF(char)+LR,0.765,0.9435509708737865
+whitespace,normalized,D2 Stylometry+GBM,0.758,0.9422879014189695
+whitespace,normalized,D3 Perplexity(Pythia-160M)+LR,0.6835,0.8996740104555639
+whitespace,normalized,D4 DistilRoBERTa (fine-tuned),0.928,0.9853435399551904
+whitespace,normalized,Proposed: Norm + Fusion,0.9585,0.9915616131441375
+typos,raw,D1 TF-IDF(char)+LR,0.7405,0.9371392830470499
+typos,raw,D2 Stylometry+GBM,0.7485,0.9369195294996265
+typos,raw,D3 Perplexity(Pythia-160M)+LR,0.2605,0.6466318147871547
+typos,raw,D4 DistilRoBERTa (fine-tuned),0.642,0.9037426250933533
+typos,raw,Proposed: Norm + Fusion,0.8325,0.9551545929798357
+typos,normalized,D1 TF-IDF(char)+LR,0.7415,0.9375967139656459
+typos,normalized,D2 Stylometry+GBM,0.749,0.9370390216579537
+typos,normalized,D3 Perplexity(Pythia-160M)+LR,0.2615,0.646430358476475
+typos,normalized,D4 DistilRoBERTa (fine-tuned),0.642,0.9037908887229277
+typos,normalized,Proposed: Norm + Fusion,0.8325,0.9553157206870798
+article_deletion,raw,D1 TF-IDF(char)+LR,0.7855,0.9481062359970128
+article_deletion,raw,D2 Stylometry+GBM,0.6945,0.926678304705004
+article_deletion,raw,D3 Perplexity(Pythia-160M)+LR,0.308,0.6869789021657954
+article_deletion,raw,D4 DistilRoBERTa (fine-tuned),0.748,0.9397665235250188
+article_deletion,raw,Proposed: Norm + Fusion,0.87,0.9677119118745331
+article_deletion,normalized,D1 TF-IDF(char)+LR,0.786,0.9485225914861838
+article_deletion,normalized,D2 Stylometry+GBM,0.694,0.9266932412247948
+article_deletion,normalized,D3 Perplexity(Pythia-160M)+LR,0.308,0.6864536967886483
+article_deletion,normalized,D4 DistilRoBERTa (fine-tuned),0.748,0.9397596153846154
+article_deletion,normalized,Proposed: Norm + Fusion,0.87,0.9677201269604182
+case_flip,raw,D1 TF-IDF(char)+LR,0.7645,0.943114077669903
+case_flip,raw,D2 Stylometry+GBM,0.654,0.9163599701269605
+case_flip,raw,D3 Perplexity(Pythia-160M)+LR,0.09,0.5639953323375653
+case_flip,raw,D4 DistilRoBERTa (fine-tuned),0.1385,0.4981238797610157
+case_flip,raw,Proposed: Norm + Fusion,0.39,0.8365339805825243
+case_flip,normalized,D1 TF-IDF(char)+LR,0.765,0.9435498506348022
+case_flip,normalized,D2 Stylometry+GBM,0.6545,0.9164630321135177
+case_flip,normalized,D3 Perplexity(Pythia-160M)+LR,0.0885,0.5635382748319642
+case_flip,normalized,D4 DistilRoBERTa (fine-tuned),0.1395,0.4982654966392831
+case_flip,normalized,Proposed: Norm + Fusion,0.39,0.836807505601195
+synonym,raw,D1 TF-IDF(char)+LR,0.7145,0.9287699775952204
+synonym,raw,D2 Stylometry+GBM,0.7755,0.9434529499626587
+synonym,raw,D3 Perplexity(Pythia-160M)+LR,0.3835,0.7428366318147871
+synonym,raw,D4 DistilRoBERTa (fine-tuned),0.8235,0.954959858103062
+synonym,raw,Proposed: Norm + Fusion,0.903,0.9757518670649739
+synonym,normalized,D1 TF-IDF(char)+LR,0.7155,0.9292688573562361
+synonym,normalized,D2 Stylometry+GBM,0.7755,0.9435102688573562
+synonym,normalized,D3 Perplexity(Pythia-160M)+LR,0.384,0.7427354368932039
+synonym,normalized,D4 DistilRoBERTa (fine-tuned),0.824,0.9550582524271845
+synonym,normalized,Proposed: Norm + Fusion,0.9035,0.9758749066467514
+combined,raw,D1 TF-IDF(char)+LR,0.666,0.9175599327856608
+combined,raw,D2 Stylometry+GBM,0.3925,0.7829583644510828
+combined,raw,D3 Perplexity(Pythia-160M)+LR,0.9885,0.9933941374159821
+combined,raw,D4 DistilRoBERTa (fine-tuned),0.013,0.19873870425690812
+combined,raw,Proposed: Norm + Fusion,0.6855,0.9474725541448843
+combined,normalized,D1 TF-IDF(char)+LR,0.753,0.9401430171769978
+combined,normalized,D2 Stylometry+GBM,0.754,0.9381075429424945
+combined,normalized,D3 Perplexity(Pythia-160M)+LR,0.4435,0.7799133681852128
+combined,normalized,D4 DistilRoBERTa (fine-tuned),0.7755,0.9486950149365198
+combined,normalized,Proposed: Norm + Fusion,0.8965,0.9750832710978341

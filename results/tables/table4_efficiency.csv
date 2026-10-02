@@ -1,0 +1,6 @@
+,params,ms_per_doc,device
+D1 TF-IDF(char)+LR,200000.0,1.4257760047912598,cuda
+D2 Stylometry+GBM,,1.2621450424194336,cuda
+D3 Perplexity(Pythia-160M)+LR,162322944.0,9.45132064819336,cuda
+D4 DistilRoBERTa (fine-tuned),82119938.0,2.3409595489501953,cuda
+Proposed: Norm + Fusion,244642882.0,14.480201244354248,cuda

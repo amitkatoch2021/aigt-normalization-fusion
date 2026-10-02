@@ -1,0 +1,16 @@
+\begin{table}
+\caption{TPR at 5% FPR by generator and domain.}
+\label{tab:table1b_breakdown}
+\begin{tabular}{lrrrrrrrrrrrrrrrrrrr}
+\toprule
+group & abstracts & books & chatgpt & cohere & cohere-chat & gpt2 & gpt3 & gpt4 & llama-chat & mistral & mistral-chat & mpt & mpt-chat & news & poetry & recipes & reddit & reviews & wiki \\
+detector &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+\midrule
+D1 TF-IDF(char)+LR & 0.734 & 0.808 & 0.967 & 0.460 & 0.692 & 0.675 & 0.646 & 0.927 & 0.957 & 0.606 & 0.927 & 0.699 & 0.907 & 0.675 & 0.734 & 0.893 & 0.738 & 0.889 & 0.681 \\
+D2 Stylometry+GBM & 0.744 & 0.757 & 0.871 & 0.487 & 0.629 & 0.732 & 0.821 & 0.808 & 0.818 & 0.738 & 0.772 & 0.861 & 0.877 & 0.633 & 0.832 & 0.853 & 0.745 & 0.789 & 0.776 \\
+D3 Perplexity(Pythia-160M)+LR & 0.727 & 0.717 & 0.765 & 0.470 & 0.685 & 0.884 & 0.838 & 0.520 & 0.815 & 0.546 & 0.791 & 0.689 & 0.566 & 0.723 & 0.439 & 0.769 & 0.619 & 0.749 & 0.760 \\
+D4 DistilRoBERTa (fine-tuned) & 0.908 & 0.965 & 0.983 & 0.732 & 0.897 & 0.927 & 0.930 & 0.983 & 1.000 & 0.874 & 0.993 & 0.901 & 0.990 & 0.931 & 0.880 & 0.970 & 0.903 & 0.923 & 0.949 \\
+Proposed: Norm + Fusion & 0.938 & 0.986 & 1.000 & 0.805 & 0.921 & 0.980 & 0.970 & 1.000 & 1.000 & 0.914 & 0.997 & 0.954 & 1.000 & 0.950 & 0.929 & 0.977 & 0.930 & 0.974 & 0.982 \\
+\bottomrule
+\end{tabular}
+\end{table}
